@@ -3,7 +3,7 @@ import Project from './target/Project';
 import KnowMore from './know-more/know-more';
 import './Projects.css';
 import firefoxImage from '../../assets/images/firefox.png'; // Importa la imagen
-import { Java, Html, Css } from './tech/tech'; // Fix the casing of the file name
+import { Java, Html, Css } from './tech/Tech'; // Fix the casing of the file name
 
 
 const Projects = () => {

@@ -1,4 +1,4 @@
-import axios from 'axios';
+/*import axios from 'axios';
 
 export const sendMessage = async (message) => {
     try {
@@ -32,4 +32,4 @@ export const sendMessage = async (message) => {
         }
         return "Sorry the chat isn't working at this moment.";
     }
-};
+}; */

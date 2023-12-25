@@ -83,10 +83,16 @@
 }
 
 .message {
-    display: inline-block; /* hace que el fondo se ajuste al contenido */
-    /* tus estilos existentes para .user y .bot */
+    position: relative; /* Asegura que el pseudo-elemento se posicione en relación a este elemento */
+    display: block; /* Asegura que los mensajes se muestren uno debajo del otro */
+    clear: both; /* Asegura que los mensajes no se coloquen uno al lado del otro */
 }
 
+.message::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .message.bot {
     text-align: left; /* alinea los mensajes del bot a la izquierda */
 }
@@ -113,6 +119,15 @@
 
 .message.user:first-of-type {
     margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    .chat-container-chatbot {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 
