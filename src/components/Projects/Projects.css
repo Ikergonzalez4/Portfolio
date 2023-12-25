@@ -1,0 +1,31 @@
+/* Projects.css */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-projects {
+    margin-bottom: 100px !important; /* ajusta este valor según tus necesidades */
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .title-projects {
+        margin-bottom: 50px !important; /* ajusta este valor según tus necesidades */
+    }
+}

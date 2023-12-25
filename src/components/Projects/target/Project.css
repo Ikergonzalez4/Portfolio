@@ -1,0 +1,41 @@
+/* Project.css */
+.project-container {
+    border: 1px solid rgb(255, 255, 255); /* Aumenta el tamaño del borde */
+    border-radius: 10px; /* Aumenta el radio del borde */
+    position: relative; /* Para posicionar absolutamente el título y la descripción */
+    overflow: hidden; /* Asegura que el contenido interno también se redondee */
+}
+
+.project-image {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    display: block; /* Para evitar el espacio en blanco debajo de la imagen */
+}
+
+.project-text {
+    position: absolute; /* Posiciona el título y la descripción encima de la imagen */
+    bottom: 0; /* Alinea el título y la descripción con la parte inferior de la imagen */
+    color: white; /* Color de texto blanco para el título y la descripción */
+    width: 100%; /* Asegura que el título y la descripción ocupen todo el ancho de la imagen */
+    padding: 10px; /* Espacio alrededor del título y la descripción */
+}
+
+.project-title, .project-description {
+    margin: 0; /* Elimina los márgenes predeterminados del título y la descripción */
+    background-color: #2B2A33  !important;/* Fondo verde para el título y la descripción */
+    text-align: center;
+}
+
+.project-description {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.tech{
+    background-color: rgb(169,	6, 234, 0.4) !important;
+    border-radius: 4px;
+    margin-bottom: 5px !important; 
+    margin-left: 5px !important;
+    text-align: center;
+}

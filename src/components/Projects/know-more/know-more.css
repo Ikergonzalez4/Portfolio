@@ -1,0 +1,50 @@
+/* KnowMore.css */
+.container-sc {
+    height: 300vh;
+    display: flex;
+    justify-content: center;
+}
+
+.scroll-button {
+    position: absolute;
+    top: 203vh;
+}
+
+.target {
+    height: 100vh;
+    background-color: red;
+}
+
+/* know-more.css */
+.scroll-button {
+    position: absolute;
+    top: 203vh;
+    text-decoration-color: #DB82FE;
+    animation: upDown 2s infinite;
+    color: white; /* color inicial del texto */
+}
+
+.scroll-button:hover {
+    color: #DB82FE; /* color del texto al hacer hover */
+}
+
+@keyframes upDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .container-sc, .scroll-button, .target {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px){
+    .container-sc, .scroll-button, .target {
+        display: none;
+    }
+}

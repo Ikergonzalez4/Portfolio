@@ -1,0 +1,118 @@
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.chat-container-chatbot  {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    overflow: auto;
+    z-index: 99;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.chat-container-chatbot.open {
+    display: block;
+}
+
+.chat-container-chatbot  .user,
+.chat-container-chatbot  .bot {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.chat-container-chatbot  .user {
+    background-color: #bd00da;
+    color: white;
+    align-self: flex-end;
+}
+
+.chat-container-chatbot  .bot {
+    background-color: #e9e9e9;
+    color: black;
+}
+
+.chat-container-chatbot  input {
+    width: 75%;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    border: 1px solid #ffffff; /* Añade un borde */
+    color: white; /* Color de texto por defecto */
+    background-color: white;
+}
+
+.input-container.first {
+    margin-top: 460px;
+}
+
+.chat-container-chatbot  button {
+    width: 15%;
+    padding: 10px;
+    background-color: #bd00da;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: 5px !important;
+    margin-right: 10px !important;
+    margin-bottom: 15px !important;
+}
+
+.chat-container-chatbot button:hover {
+    background-color: #770289;
+}
+
+.chat-container-chatbot {
+    /* tus estilos existentes */
+    text-align: right; /* alinea los mensajes del usuario a la derecha */
+}
+
+.message {
+    display: inline-block; /* hace que el fondo se ajuste al contenido */
+    /* tus estilos existentes para .user y .bot */
+}
+
+.message.bot {
+    text-align: left; /* alinea los mensajes del bot a la izquierda */
+}
+
+
+.chat-container-chatbot span{
+    background: transparent !important;
+}
+
+.close-chat {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    /* Añade margen si es necesario */
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.55);
+}
+
+.close-chat:hover {
+    color: red;
+    background-color: transparent !important;
+    scale: 1.2;
+}
+
+.message.user:first-of-type {
+    margin-top: 40px;
+}
+
+

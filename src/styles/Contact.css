@@ -1,0 +1,127 @@
+
+  #contact-form {
+    background: #fff;
+    border-radius: 1.25rem;
+    box-shadow: 0.5rem 0.5rem 0.75rem rgba(0,0,0,0.25);
+    padding: 2.1875rem;
+    width: 80%;
+    min-width: 16rem;
+    max-width: 25rem;
+    transition: all 1.1s cubic-bezier(.87,-.41,.19,1.44);
+    
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    input, textarea {
+      border: none;
+      border-bottom: 0.0625rem solid lightgrey;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      padding: 0.25rem 0;
+  
+      &:focus {
+        border-color: grey;
+        outline: none;
+      }
+    }
+  
+    label {
+      color: rgba(0,0,0,0);
+      font-size: 0.75rem;
+      transform: translateY(0.875rem);
+      transition: all 0.25s;
+    }
+  
+    button {
+      background-color: #808080;
+      border: none;
+      border-radius: 50%;
+      box-shadow: 0.125rem 0.125rem 0.0625rem #888888;
+      color: #fff;
+      font-size: 1.425rem;
+      margin: 1rem auto 0;
+      height: 7.8125rem;
+      width: 7.8125rem;
+      transition: background-color 0.25s, transform 0.05s;
+  
+      &:hover, &:focus {
+        background-color: #606060;
+        cursor: pointer;
+        outline: none;
+      }
+      
+      &:active {
+        box-shadow: none;
+        transform: translateY(0.0625rem);
+      }
+    }
+    
+    .contact-label-active {
+      color: rgba(169,169,169,1);
+      transform: translateY(0);
+    }
+  }
+  
+  .form-sent {
+    transform: translateY(-62.5rem) rotate(20deg);
+  }
+  
+  .confirm-active {
+    transform: translateY(-17.1875rem) rotate(-6deg);;
+  }
+  
+  .env-body {
+    background: #fff;
+    border: 0.625rem solid lightgrey;
+    border-radius: 8%;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0,0,0,0.25);
+    width: 18.75rem;
+    height: 12.5rem;
+    overflow: hidden;
+    position: absolute;
+    top: 58%;
+    transition: all 0.65s ease-in;
+    z-index: -1;
+  }
+  
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 12.5rem solid transparent;
+    border-right: 12.5rem solid transparent;
+    border-top: 12.5rem solid lightgrey;
+    position: relative;
+    left: -3.125rem;
+    top: -2.5rem;
+    z-index: 1;
+  }
+  
+  .arrow-down-inner {
+    width: 0; 
+    height: 0; 
+    border-left: 11.25rem solid transparent;
+    border-right: 11.25rem solid transparent; 
+    border-top: 11.25rem solid #fff;
+    
+    position: relative;
+    left: -1.875rem;
+    top: -14.6875rem;
+    z-index: 2;
+  }
+  
+  .note {
+    font-size: 1.65rem;
+    font-weight: bold;
+    color: #606060;
+    line-height: 0.9;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    top: -20.375rem;
+  }
+  
+  .bigger {
+    font-size: 2.95rem;
+  }
