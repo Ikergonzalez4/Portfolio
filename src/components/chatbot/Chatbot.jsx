@@ -12,14 +12,13 @@ const Chatbot = () => {
         'hi': 'Hello!',
         'hello': 'Hi!',
         'how are you?': 'Fine, thanks!',
-        'what is your name?': 'My name is Chatbot',
-        'what is your age?': 'I am 1 day old',
+        'what is your name?': 'My name is Iker Gonzalez',
+        'what is your age?': 'I am 19 years old',
         'what is your favorite color?': 'My favorite color is blue',
         'what is your favorite food?': 'My favorite food is electricity',
         'what is your favorite movie?': 'My favorite movie is Star Wars',
         'what is your favorite song?': 'My favorite song is Bohemian Rhapsody',
         'what is your favorite book?': 'My favorite book is Harry Potter',
-        'what is your favorite game?': 'My favorite game is Minecraft',
         'what is your favorite sport?': 'My favorite sport is soccer',
         'what is your favorite animal?': 'My favorite animal is a dog',
         'what is your favorite subject?': 'My favorite subject is math',
@@ -32,10 +31,14 @@ const Chatbot = () => {
         'what is your favorite social network?': 'My favorite social network is Discord',
         'what is your favorite app?': 'My favorite app is Spotify',
         'what is your favorite emoji?': 'My favorite emoji is 😂',
+        'what are your hobbies?': 'My hobbies are programming, playing videogames and listening to music',
     };
 
     const handleSend = async () => {
         let response;
+
+        const lowerCaseInput = input.toLowerCase();
+
 
         if (input.toLowerCase() in predefinedAnswers) {
             response = predefinedAnswers[input.toLowerCase()];

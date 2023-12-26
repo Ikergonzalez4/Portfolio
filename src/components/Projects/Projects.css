@@ -8,8 +8,8 @@
 .projects-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-    width: 60%;
+    gap: 100px;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
 }

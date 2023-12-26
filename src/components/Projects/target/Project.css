@@ -1,27 +1,27 @@
 /* Project.css */
 .project-container {
-    border: 1px solid rgb(255, 255, 255); /* Aumenta el tamaño del borde */
-    border-radius: 10px; /* Aumenta el radio del borde */
-    position: relative; /* Para posicionar absolutamente el título y la descripción */
-    overflow: hidden; /* Asegura que el contenido interno también se redondee */
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex; /* Añadido para hacer que los elementos internos sean flexibles */
+    height: 300px; /* Añadido para establecer la altura a 300px */
+    overflow: hidden; /* Añadido para asegurar que la imagen respeta el borde redondeado */
 }
 
 .project-image {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    display: block; /* Para evitar el espacio en blanco debajo de la imagen */
+    width: 60%; /* Ajustado para que la imagen ocupe el 70% del ancho */
+    display: block;
 }
 
 .project-text {
-    position: absolute; /* Posiciona el título y la descripción encima de la imagen */
-    bottom: 0; /* Alinea el título y la descripción con la parte inferior de la imagen */
-    color: white; /* Color de texto blanco para el título y la descripción */
-    width: 100%; /* Asegura que el título y la descripción ocupen todo el ancho de la imagen */
-    padding: 10px; /* Espacio alrededor del título y la descripción */
+    width: 40%; /* Ajustado para que el texto ocupe el 30% del ancho */
+    display: flex; /* Añadido para hacer que los elementos internos sean flexibles */
+    flex-direction: column; /* Añadido para alinear los elementos internos verticalmente */
+    justify-content: space-between; /* Añadido para distribuir el espacio entre los elementos internos */
+    padding: 10px;
 }
 
 .project-title, .project-description {
-    margin: 0; /* Elimina los márgenes predeterminados del título y la descripción */
-    background-color: #2B2A33  !important;/* Fondo verde para el título y la descripción */
+    margin: 0;
     text-align: center;
 }
 
