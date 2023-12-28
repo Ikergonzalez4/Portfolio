@@ -4,7 +4,6 @@ import githubIcon from '../../assets/images/github.svg';
 import discordIcon from '../../assets/images/discord.svg';
 import avatar from '../../assets/images/memoji.png';
 import Scroll from '../scroll/Scroll';
-import Typed from 'react-typed';
 
 
 
