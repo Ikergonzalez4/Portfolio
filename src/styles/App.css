@@ -7,7 +7,6 @@
 
 body.dark-mode {
   *{
-    background-color: #282c34;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -224,7 +223,18 @@ body.dark-mode {
     }
 
     .skills {
-      margin-top: 50px;
+      transform: scale(0.9);
+      grid-template-columns: repeat(4, 1fr); /* Cambia a 3 columnas */
+      height: 800px; /* Aumenta la altura */
+      width: 100%;
+      margin: auto;
+    }
+    
+    .techs {
+      position: absolute;
+      right: 55px;
+      margin-bottom: 200px;
+      text-align: center;
     }
 
     .skills img{
