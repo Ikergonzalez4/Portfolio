@@ -5,7 +5,7 @@ function KnowMore() {
     const scrollDown = (e) => {
         e.preventDefault();
         window.scrollTo({
-            top: window.innerHeight * 2.09, // 105% de la altura de la ventana
+            top: window.innerHeight * 2.07, // 105% de la altura de la ventana
             behavior: 'smooth'
         });
     };

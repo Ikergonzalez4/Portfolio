@@ -35,76 +35,90 @@ function About() {
                 <Routes>
                     <Route path="/Contact" element={<Contact />} />
                 </Routes>
+            <h1>
+                   <span className="techs underline-effect">Technologies</span> 
+            </h1>
             <div className="skills">
-            <p className="frontend-title">Frontend</p>
-                <div className="frontend">
-                    <div className="image-container">
-                        <img src={htmlImage} alt="HTML" />
-                        <p>HTML</p>
-                    </div>
-                    <div className="image-container">
-                        <img src={cssImage} alt="CSS" />
-                        <p>CSS</p>
-                    </div>
-                    <div className="image-container">
-                        <img src={jsImage} alt="JavaScript" />
-                        <p>JavaScript</p>
-                    </div>
-                    <div className="image-container">
-                        <img src={reactImage} alt="ReactJS" />
-                        <p>ReactJS</p>
-                    </div>
-                    <div className="image-container">
-                        <img src={vueImage} alt="Vue" />
-                        <p>Vue</p>
-                    </div>
+                <div className="image-container">
+                    <img src={htmlImage} alt="HTML" />
+                    <p>HTML</p>
                 </div>
-                <p className="backend-title">Backend</p>
-                <div className="backend">
-                    <div className="image-container">
-                        <img src={javaImage} alt="Java" />
-                        <p>Java</p>
-                    </div>
-                    <div className="image-container">
-                        <img src={kotlinImage} alt="Kotlin" />
-                        <p>Kotlin</p>
-                    </div>
-                    <div className="image-container">
-                            <img src={swiftImage} alt="Swift" />
-                            <p>Swift</p>
-                    </div>
-                    <div className="image-container">
-                            <img src={phytonImage} alt="Phyton" />
-                            <p>Phyton</p>
-                    </div>
-                    <div className="image-container">
-                            <img src={mysqlImage} alt="MySQL" />
-                            <p>MySQL</p>
-                    </div>                    
+                <div className="image-container">
+                    <img src={cssImage} alt="CSS" />
+                    <p>CSS</p>
                 </div>
-                <p className="extra-title">Extra</p>
-                <div className="extra">
-                    <div className="image-container">
-                        <img src={figmaImage} alt="Figma" />
-                        <p>Figma</p>
-                    </div>
-                    <div className="image-container">
-                        <img src={photoshopImage} alt="Photoshop" />
-                        <p>Photoshop</p>
-                    </div>
-                    <div className="image-container">
-                            <img src={firebaseImage} alt="Firebase" />
-                            <p>Firebase</p>
-                    </div>
-                    <div className="image-container">
-                            <img src={gitImage} alt="Git" />
-                            <p>Git</p>
-                    </div>
-                    <div className="image-container">
-                            <img src={accessImage} alt="Microsoft Access" />
-                            <p>Access</p>
-                    </div>                    
-                </div>  
+                <div className="image-container">
+                    <img src={jsImage} alt="JavaScript" />
+                    <p>JavaScript</p>
+                </div>
+                <div className="image-container">
+                    <img src={reactImage} alt="ReactJS" />
+                    <p>ReactJS</p>
+                </div>
+                <div className="image-container">
+                    <img src={vueImage} alt="Vue" />
+                    <p>Vue</p>
+                </div>
+                <div className="image-container">
+                    <img src={javaImage} alt="Java" />
+                    <p>Java</p>
+                </div>
+                <div className="image-container">
+                    <img src={kotlinImage} alt="Kotlin" />
+                    <p>Kotlin</p>
+                </div>
+                <div className="image-container">
+                    <img src={swiftImage} alt="Swift" />
+                    <p>Swift</p>
+                </div>
+                <div className="image-container">
+                    <img src={phytonImage} alt="Phyton" />
+                    <p>Phyton</p>
+                </div>
+                <div className="image-container">
+                    <img src={mysqlImage} alt="MySQL" />
+                    <p>MySQL</p>
+                </div>
+                <div className="image-container">
+                    <img src={figmaImage} alt="Figma" />
+                    <p>Figma</p>
+                </div>
+                <div className="image-container">
+                    <img src={photoshopImage} alt="Photoshop" />
+                    <p>Photoshop</p>
+                </div>
+                <div className="image-container">
+                    <img src={firebaseImage} alt="Firebase" />
+                    <p>Firebase</p>
+                </div>
+                <div className="image-container">
+                    <img src={gitImage} alt="Git" />
+                    <p>Git</p>
+                </div>
+                <div className="image-container">
+                    <img src={accessImage} alt="Microsoft Access" />
+                    <p>Access</p>
+                </div>
+                <div className="image-container">
+                    <img src={accessImage} alt="Microsoft Access" />
+                    <p>Access</p>
+                </div>
+                <div className="image-container">
+                    <img src={accessImage} alt="Microsoft Access" />
+                    <p>Access</p>
+                </div>
+                <div className="image-container">
+                    <img src={accessImage} alt="Microsoft Access" />
+                    <p>Access</p>
+                </div>
+                <div className="image-container">
+                    <img src={accessImage} alt="Microsoft Access" />
+                    <p>Access</p>
+                </div>
+                <div className="image-container">
+                    <img src={accessImage} alt="Microsoft Access" />
+                    <p>Access</p>
+                </div>
             </div>
         </div>
         </Router>

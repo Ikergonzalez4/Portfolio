@@ -5,7 +5,7 @@ function Scroll() {
     const scrollDown = (e) => {
         e.preventDefault();
         window.scrollTo({
-            top: window.innerHeight * 1.08, // 105% de la altura de la ventana
+            top: window.innerHeight * 1.06, // 105% de la altura de la ventana
             behavior: 'smooth'
         });
     };
