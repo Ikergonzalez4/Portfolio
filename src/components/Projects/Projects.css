@@ -6,22 +6,21 @@
 }
 
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 100px;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex; /* Cambiado de grid a flex */
+    flex-direction: column; /* Añadido para alinear los proyectos verticalmente */
+    width: 65%; /* Ajustado para que el contenedor ocupe el 80% del ancho */
+    margin: 0 auto; /* Centrado horizontalmente */
 }
 
 .title-projects {
-    margin-bottom: 100px !important; /* ajusta este valor según tus necesidades */
+    margin-bottom: 10px !important; /* ajusta este valor según tus necesidades */
+    color: #DB82FE;
+    font-size: 3em;
 }
 
 /* Estilos responsive */
 @media (max-width: 768px) {
     .projects-container {
-        grid-template-columns: 1fr;
         width: 90%;
     }
 

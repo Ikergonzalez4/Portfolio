@@ -3,6 +3,11 @@
     scroll-behavior: smooth;
 }
 
+body{
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+
+}
+
 /*DARKMODE*/
 
 body.dark-mode {
