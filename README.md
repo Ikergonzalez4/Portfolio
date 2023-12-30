@@ -32,7 +32,7 @@ npm install
 4. Run the project:
 
 ```bash```
-npm start
+npm run dev
 
 Using
 To use the portfolio, just browse through the different sections to learn more about me, my skills and projects.
