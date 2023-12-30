@@ -115,6 +115,13 @@ body.dark-mode {
     justify-content: center;
     align-items: center;
     height: 100vh; /* Asegúrate de que es vh, no svh */
+    margin-left: 150px; /* Añade un margen a la izquierda */
+  }
+
+  @media (max-width: 600px) {
+    .App-header {
+      margin-left: 0;
+    }
   }
 
   .Avatar img {
@@ -145,7 +152,7 @@ body.dark-mode {
   }
   
   .description {
-    width: 50%;
+    width: 55%;
     /* Ajusta según sea necesario */
   }
   
@@ -197,16 +204,17 @@ body.dark-mode {
     display: block;
   }
   
-  .description p{
-    font-size: 1.4em;
+  .description p {
+    font-size: 1.4em !important;
     text-align: left; 
     margin-left: 80px;
     margin-right: 240px;
     margin-top: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
-    
   }
+
+  /* Cuando la pantalla tiene 2560px de ancho o más, reduce el tamaño de la fuente */
   
   
   @media (max-width: 768px) {
@@ -247,7 +255,7 @@ body.dark-mode {
     }
 
     .description p {
-      font-size: 1em;
+      font-size: 1.1em;
       margin-left: 20px;
       margin-right: 20px;
     }
@@ -277,7 +285,7 @@ body.dark-mode {
   }
 
   .description p {
-    font-size: 1.2em;
+    font-size: 1.6em;
     margin-left: 30px;
     margin-right: 30px;
   }

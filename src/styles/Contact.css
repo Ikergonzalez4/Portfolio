@@ -35,7 +35,6 @@
     }
   
     button {
-      background-color: #808080;
       border: none;
       border-radius: 50%;
       box-shadow: 0.125rem 0.125rem 0.0625rem #888888;
@@ -47,7 +46,6 @@
       transition: background-color 0.25s, transform 0.05s;
   
       &:hover, &:focus {
-        background-color: #606060;
         cursor: pointer;
         outline: none;
       }

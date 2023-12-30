@@ -13,7 +13,8 @@ function Header() {
         <header className="App-header">
             <div style={{ fontFamily: 'Inter, system-ui, Avenir, Helvetica, Arial, sans-serif' }}>
                 <h1 className="apple-style">Hi, my name is Iker</h1>       
-                //TODO writing animation <h3 className="apple-style-h3">and I'm a Software Developer</h3>
+                {/* TODO: writing animation */}
+                <h3 className="apple-style-h3">and I'm a Software Developer</h3>
                 <a className="button" href="/src/components/ContactForm.jsx">Contact Me</a>
                 <div className="icon-container">
                     <a href="https://www.linkedin.com/in/iker-gonzález-camacho-85077220b/">
