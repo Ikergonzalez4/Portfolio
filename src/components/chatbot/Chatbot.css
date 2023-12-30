@@ -52,7 +52,7 @@
     border: none;
     border-radius: 2px;
     border: 1px solid #ffffff; /* Añade un borde */
-    color: white; /* Color de texto por defecto */
+    color: black; /* Color de texto por defecto */
     background-color: white;
 }
 
