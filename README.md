@@ -12,6 +12,7 @@ Open your terminal and run the following command to clone the repository:
 
 ```bash
 git clone https://github.com/Ikergonzalez4/Portfolio.git
+```
 
 ### 2. Navigate to the Project Directory
 
@@ -19,6 +20,7 @@ Navigate to the project directory with the following command:
 
 ```bash
 cd Portfolio
+```
 
 ### 3. Install Dependencies
 
@@ -26,6 +28,7 @@ Make sure you have Node.js and npm installed on your system. Then, run the follo
 
 ```bash
 npm install
+```
 
 ### 4. Run the Project Locally
 
@@ -34,6 +37,7 @@ Once all dependencies are successfully installed, run the following command to s
 
 ```bash
 npm run dev
+```
 
 This will start the Vite development server, and you can view the project in your browser by accessing http://localhost:3000.
 
