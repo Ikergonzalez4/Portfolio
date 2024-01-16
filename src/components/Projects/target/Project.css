@@ -49,6 +49,8 @@
 .project-title {
     margin-bottom: 20px !important;
     margin-right: 160px !important;
+    color: white;
+    text-decoration: underline #DB82FE;
 }
 
 .more-info {
