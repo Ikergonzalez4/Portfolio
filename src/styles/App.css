@@ -3,9 +3,12 @@
     scroll-behavior: smooth;
 }
 
+p{
+  color: white;
+}
+
 body{
   overflow-x: hidden; /* Evita el desplazamiento horizontal */
-
 }
 
 /*DARKMODE*/
@@ -141,10 +144,6 @@ body.dark-mode {
       display: none;
     }
   }
-
-
-
-
   
   
   /*ABOUT*/
