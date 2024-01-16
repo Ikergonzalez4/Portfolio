@@ -10,7 +10,6 @@ const Project = ({ project }) => {
             const closeImage = () => setIsImageExpanded(false);
             document.body.addEventListener('click', closeImage);
 
-            // Limpia el manejador de eventos cuando la imagen ya no está expandida
             return () => document.body.removeEventListener('click', closeImage);
         }
     }, [isImageExpanded]);

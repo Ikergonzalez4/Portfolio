@@ -143,6 +143,12 @@
     }
 }
 
+body.light-mode {
+    .project-title {
+        color: #282c34 !important;
+    }
+}
+
 
 
 
