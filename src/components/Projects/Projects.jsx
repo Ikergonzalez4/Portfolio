@@ -11,6 +11,9 @@ import jsS from '../../assets/images/shields/jsshield.svg';
 import nodeS from '../../assets/images/shields/nodejsshield.svg';
 import mongodbS from '../../assets/images/shields/mongodbshield.svg';
 import expressS from '../../assets/images/shields/expressjsshield.svg';
+import discordS from '../../assets/images/shields/discordshield.svg';
+import astroS from '../../assets/images/shields/astroshield.svg';
+import pythonS from '../../assets/images/shields/pythonshield.svg';
 
 
 // project images 
@@ -80,11 +83,8 @@ const Projects = () => {
         ),
         description: (
             <div className="shield-container">
-              <img src={htmlS} alt="HTML Shield" className="shield-image" />
-              <img src={cssS} alt="CSS Shield" className="shield-image" />
-              <img src={reactS} alt="React Shield" className="shield-image" />
               <img src={jsS} alt="Java Script Shield" className="shield-image" />
-  
+              <img src={discordS} alt="Discord Shield" className="shield-image" />
             </div>
           ),
         image: safariTeslaBkg,
@@ -106,7 +106,6 @@ const Projects = () => {
               <img src={htmlS} alt="HTML Shield" className="shield-image" />
               <img src={cssS} alt="CSS Shield" className="shield-image" />
               <img src={jsS} alt="Java Script Shield" className="shield-image" />
-  
             </div>
           ),
         image: yourhometick,
@@ -120,9 +119,8 @@ const Projects = () => {
             <div className="shield-container">
               <img src={htmlS} alt="HTML Shield" className="shield-image" />
               <img src={cssS} alt="CSS Shield" className="shield-image" />
-              <img src={reactS} alt="React Shield" className="shield-image" />
               <img src={jsS} alt="Java Script Shield" className="shield-image" />
-  
+              <img src={astroS} alt="Astro Shield" className="shield-image" />
             </div>
           ),
       image: pokedex,
