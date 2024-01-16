@@ -13,9 +13,9 @@ const Links = () => {
 
     return (
         <div>
-            <button className="cool-hover" style={buttonStyle} onClick={() => handleScroll(1.09)}>About</button>
-            <button className="cool-hover" style={buttonStyle} onClick={() => handleScroll(2.09)}>Projects</button>
-            <button className="cool-hover" style={buttonStyle} onClick={() => handleScroll(3.09)}>Work</button>
+            <button className="cool-hover" style={buttonStyle} onClick={() => handleScroll(1.07)}>About</button>
+            <button className="cool-hover" style={buttonStyle} onClick={() => handleScroll(2.07)}>Projects</button>
+            <button className="cool-hover" style={buttonStyle} onClick={() => handleScroll(3.07)}>Work</button>
         </div>
     );
 };
