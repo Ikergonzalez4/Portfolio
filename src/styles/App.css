@@ -3,9 +3,6 @@
     scroll-behavior: smooth;
 }
 
-p{
-  color: white;
-}
 
 body{
   overflow-x: hidden; /* Evita el desplazamiento horizontal */
@@ -19,6 +16,10 @@ body.dark-mode {
     padding: 0;
     box-sizing: border-box;
     max-width: 100%;
+  }
+
+  p{
+    color: white;
   }
 
   .container {
@@ -307,6 +308,10 @@ body.light-mode {
       max-width: 100%;
     }
 
+    p{
+      color: #282c34;
+    }
+
      
     body {
       background-color: #e5e5e5;
@@ -415,109 +420,94 @@ body.light-mode {
     }
     
     
-    .App-header, .header {
+    .App-header {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100svh;
+      height: 100vh; /* Asegúrate de que es vh, no svh */
+      margin-left: 150px; /* Añade un margen a la izquierda */
+    }
+
+    .Avatar img {
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 50%;
     }
     
   
     /*ABOUT*/
     
     
-  .about-container {
-    margin-top: 100px;
-    height: 100svh;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .about-container p{
-    color: #282c34;
-  }
+    .about-container {
+      margin-top: 100px;
+      height: 100svh;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .description {
+      width: 55%;
+      /* Ajusta según sea necesario */
+    }
+    
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      padding: 20px; /* Añadido para agregar un margen interno alrededor del contenido */
+      box-sizing: border-box;
+      border-radius: 10px;
+      box-shadow: #222 0px 0px 10px 0px;
+      width: 40%;
+      height: 500px;
+      margin-top: 20vh; /* Añadido para mover el contenedor hacia abajo */
+      margin-right: 10vh;
+    }
   
-  .description {
-    width: 50%;
-    /* Ajusta según sea necesario */
-  }
+    .skills > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   
-  .skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    margin-top: -180px; /* Ajusta este valor según tus necesidades */
-
-  }
+    .image-container {
+      height: 100px; /* Ajusta este valor según tus necesidades */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .description h1 {
+      font-size: 3em;
+      margin-left: 80px; /* Añadido para agregar un margen a la izquierda */
+      text-align: left; /* Añadido para alinear el texto a la izquierda */
+      color: #DB82FE;
+    }
   
-  .skills > div {
-    border: 1px solid #282c34;
-    box-sizing: border-box;
-    border-radius: 20px;
-    padding: 20px; /* Añadido para agregar un margen interno alrededor del contenido */
-    margin-right: 40px;
-    margin-bottom: 20px;
-  }
-  
-  .description h1 {
-    font-size: 3em;
-    margin-left: 80px; /* Añadido para agregar un margen a la izquierda */
-    text-align: left; /* Añadido para alinear el texto a la izquierda */
-    color: #DB82FE;
-  
-  }
-  
-  .description h1 span {
-    display: block;
-  }
-  
-  .description p{
-    font-size: 1.4em;
-    text-align: left; 
-    margin-left: 80px;
-    margin-right: 240px;
-    margin-top: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  
-  .frontend p{
-    margin-bottom: 20px;
-  }
-  
-  .frontend img{
-    width: 50px;
-    height: 50px;
-    margin-top: 20px;
-  }
-  
-  .backend-title {
-    font-size: 1.5em;
-    text-align: left;
-    margin-bottom: 0px;
-    font-weight: bold;
-    margin-left: 655px;
-    color: #DB82FE;
-  }
-
-  .frontend-title {
-    font-size: 1.5em;
-    text-align: left;
-    margin-bottom: 0px;
-    font-weight: bold;
-    margin-left: 650px;
-    color: #DB82FE;
-  }
-  
-  .extra-title {
-    font-size: 1.5em;
-    text-align: left;
-    margin-bottom: 0px;
-    font-weight: bold;
-    margin-left: 670px;
-    color: #DB82FE;
-  }
+    .techs {
+      position: absolute; /* Añadido para permitir la alineación a la derecha */
+      right: 12vh; /* Añadido para alinear el contenedor a la derecha */
+      margin-top: 25px;
+      text-align: right;
+      color: #DB82FE;
+    }
+    
+    .description h1 span {
+      display: block;
+    }
+    
+    .description p {
+      font-size: 1.4em !important;
+      text-align: left; 
+      margin-left: 80px;
+      margin-right: 240px;
+      margin-top: 10px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
 
   .scroll-button {
     color: #282c34;
@@ -631,15 +621,6 @@ body.light-mode {
   column-gap: 10px; /* Espacio entre los contenedores */
 }
 
-.frontend,
-.backend,
-.extra {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Aumenta el ancho de las columnas */
-  column-gap: 10px; /* Espacio entre las columnas */
-  width: 800px;
-}
-
 .image-container {
   display: flex;
   flex-direction: column;
@@ -656,13 +637,6 @@ body.light-mode {
 
 .image-container p {
   margin: 0; /* Elimina el margen predeterminado del párrafo */
-}
-
-/* Estilos adicionales para los títulos */
-.frontend-title,
-.backend-title,
-.extra-title {
-  text-align: right; /* Alinea el título a la derecha */
 }
 
 

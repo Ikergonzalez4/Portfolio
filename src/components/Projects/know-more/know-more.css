@@ -5,11 +5,6 @@
     justify-content: center;
 }
 
-.scroll-button {
-    position: absolute;
-    top: 203vh;
-}
-
 .target {
     height: 100vh;
     background-color: red;
@@ -18,7 +13,7 @@
 /* know-more.css */
 .scroll-button {
     position: absolute;
-    top: 203vh;
+    top: 201vh;
     text-decoration-color: #DB82FE;
     animation: upDown 2s infinite;
     color: white; /* color inicial del texto */
@@ -46,5 +41,12 @@
 @media (max-width: 1024px){
     .container-sc, .scroll-button, .target {
         display: none;
+    }
+}
+
+body.light-mode {
+    .scroll-button {
+        position: absolute;
+        top: 206vh;
     }
 }

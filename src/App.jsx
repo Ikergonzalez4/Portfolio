@@ -22,8 +22,8 @@ function App() {
       <main>
         <About />
         <Projects />
-        <Chatbot />
         <Work />
+        <Chatbot />
       </main>
       <footer>
         <Footer />

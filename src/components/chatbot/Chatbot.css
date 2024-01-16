@@ -130,4 +130,12 @@
     }
 }
 
+body.light-mode {
+
+    .chat-button{
+        color: #000000;
+    }
+    
+}
+
 
