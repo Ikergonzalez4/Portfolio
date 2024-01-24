@@ -1,11 +1,9 @@
-import react from 'react';
+import React from 'react';
 import './work.css';
 
 const Work = () => {
     return (
-        <div className="work-content">
-        
-        </div>
+        <div></div>
     );
 }
 

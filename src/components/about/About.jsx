@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Contact from '../../pages/Contact.jsx';
 import htmlImage from '../../assets/images/html.svg';
 import cssImage from '../../assets/images/css.svg';
@@ -17,26 +17,22 @@ import firebaseImage from '../../assets/images/firebase.svg';
 import gitImage from '../../assets/images/git.svg';
 import photoshopImage from '../../assets/images/photoshop.svg';
 import Scroll from '../scroll/Scroll.jsx';
-import { Link } from 'react-router-dom';
 
 function About() {
     return (
-        <Router>
-       <div className="about-container">
+    <div className="about-container">
             <div className="description">
                 <h1>
-                   <span className="underline-effect">My Skills and</span> 
+                <span className="underline-effect">My Skills and</span> 
                     <span className="underline-effect">experiences</span>
                 </h1>
                 <p>My experience spans both web technologies as well as cross-platform technologies.</p>
                 <p>Beyond the basics, I actively explore emerging technologies to contribute to my productivity. My persistent and hardworking nature, coupled with a strong work ethic, positions me as a valuable asset on any project or team.</p>
                 <p>I approach challenges with unwavering persistence, viewing them as opportunities for growth. Every project is an opportunity to expand my skill set and adopt a mindset of constant improvement. I am excited to bring my knowledge and experience to projects that demand innovation and excellence.</p>
-                <p>If you have any questions or concerns please do not hesitate to <Link to="/Contact">contact me</Link></p>            </div>
-                <Routes>
-                    <Route path="/Contact" element={<Contact />} />
-                </Routes>
+                <p>If you have any questions or concerns please do not hesitate to <Link to="/contact">contact me</Link></p>            
+            </div>
             <h1>
-                   <span className="techs underline-effect">Technologies</span> 
+                <span className="techs underline-effect">Technologies</span> 
             </h1>
             <div className="skills">
                 <div className="image-container">
@@ -121,7 +117,6 @@ function About() {
                 </div>
             </div>
         </div>
-        </Router>
     );
 }
 

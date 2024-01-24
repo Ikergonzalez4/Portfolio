@@ -25,3 +25,32 @@
     text-align: center;
 }
 
+.modal-content h1 {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.modal-content p {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.modal-content {
+    position: relative;
+    /* Resto de tus estilos para .modal-content */
+}
+
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: red; /* Hace que la X sea roja */
+}
+
