@@ -1,125 +1,97 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f2f2f2;
+}
 
-  #contact-form {
-    background: #fff;
-    border-radius: 1.25rem;
-    box-shadow: 0.5rem 0.5rem 0.75rem rgba(0,0,0,0.25);
-    padding: 2.1875rem;
-    width: 80%;
-    min-width: 16rem;
-    max-width: 25rem;
-    transition: all 1.1s cubic-bezier(.87,-.41,.19,1.44);
-    
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-    
-    input, textarea {
-      border: none;
-      border-bottom: 0.0625rem solid lightgrey;
-      font-size: 1.25rem;
-      margin-bottom: 1rem;
-      padding: 0.25rem 0;
-  
-      &:focus {
-        border-color: grey;
-        outline: none;
-      }
-    }
-  
-    label {
-      color: rgba(0,0,0,0);
-      font-size: 0.75rem;
-      transform: translateY(0.875rem);
-      transition: all 0.25s;
-    }
-  
-    button {
-      border: none;
-      border-radius: 50%;
-      box-shadow: 0.125rem 0.125rem 0.0625rem #888888;
-      color: #fff;
-      font-size: 1.425rem;
-      margin: 1rem auto 0;
-      height: 7.8125rem;
-      width: 7.8125rem;
-      transition: background-color 0.25s, transform 0.05s;
-  
-      &:hover, &:focus {
-        cursor: pointer;
-        outline: none;
-      }
-      
-      &:active {
-        box-shadow: none;
-        transform: translateY(0.0625rem);
-      }
-    }
-    
-    .contact-label-active {
-      color: rgba(169,169,169,1);
-      transform: translateY(0);
-    }
-  }
-  
-  .form-sent {
-    transform: translateY(-62.5rem) rotate(20deg);
-  }
-  
-  .confirm-active {
-    transform: translateY(-17.1875rem) rotate(-6deg);;
-  }
-  
-  .env-body {
-    background: #fff;
-    border: 0.625rem solid lightgrey;
-    border-radius: 8%;
-    box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0,0,0,0.25);
-    width: 18.75rem;
-    height: 12.5rem;
-    overflow: hidden;
-    position: absolute;
-    top: 58%;
-    transition: all 0.65s ease-in;
-    z-index: -1;
-  }
-  
-  .arrow-down {
-    width: 0; 
-    height: 0; 
-    border-left: 12.5rem solid transparent;
-    border-right: 12.5rem solid transparent;
-    border-top: 12.5rem solid lightgrey;
-    position: relative;
-    left: -3.125rem;
-    top: -2.5rem;
-    z-index: 1;
-  }
-  
-  .arrow-down-inner {
-    width: 0; 
-    height: 0; 
-    border-left: 11.25rem solid transparent;
-    border-right: 11.25rem solid transparent; 
-    border-top: 11.25rem solid #fff;
-    
-    position: relative;
-    left: -1.875rem;
-    top: -14.6875rem;
-    z-index: 2;
-  }
-  
-  .note {
-    font-size: 1.65rem;
-    font-weight: bold;
-    color: #606060;
-    line-height: 0.9;
-    position: relative;
-    z-index: 3;
-    text-align: center;
-    top: -20.375rem;
-  }
-  
-  .bigger {
-    font-size: 2.95rem;
-  }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 500px;
+  padding: 20px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  background-color: white;
+}
+
+.contact-form h1 {
+  text-align: center;
+  color: #333;
+}
+
+.contact-form label {
+  margin: 10px 0;
+  color: #555;
+  flex: 1; /* Add this */
+}
+
+.contact-form input, .contact-form textarea {
+  width: 98%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  flex: 1; /* Add this */
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 100px;
+  width: 96%;
+
+}
+.contact-form input[type="submit"] {
+  width: 100%; 
+  height: 3px !important; 
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.input-field {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.input-field input {
+  padding: 10px 0.3rem;
+  height: 20px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  transition: border-bottom-color 0.25s ease-in;
+}
+
+.input-field input:focus {
+  border-bottom-color: #8a02a5;
+}
+
+.input-field label {
+  position: absolute;
+  padding-left: 10px ;
+  top: 0;
+  left: 0;
+  color: #999;
+  font-size: 1rem; /* Aumenta el tamaño de la fuente */
+  transition: all 0.25s ease-in;
+}
+
+.input-field input:valid + label,
+.input-field input:focus + label,
+.input-field textarea:valid + label,
+.input-field textarea:focus + label {
+  top: -2.1rem;
+  left: 0;
+  padding-left: 0; /* Elimina el padding-left */
+  color: #8a02a5;
+  font-size: 1.2rem;
+}
