@@ -36,10 +36,7 @@ const Projects = () => {
         title: "Auth",
         moreInfo: (
           <>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit vivamus leo,
-            venenatis commodo facilisis nullam tempor quam neque suscipit inceptos
-            curae, habitasse mauris pulvinar sed molestie facilisi non ac. Ad
-            aenean in justo vel viverra cubilia.
+            Web page that allows user registration and login and add, edit and delete task list.
             <br />
             <a
               href="https://github.com/ikergonzalez4/Auth"
@@ -74,7 +71,7 @@ const Projects = () => {
         title: "Discord Bot",
         moreInfo: (
             <>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit vivamus leo, venenatis commodo facilisis nullam tempor quam neque suscipit inceptos curae, habitasse mauris pulvinar sed molestie facilisi non ac. Ad aenean in justo vel viverra cubilia. 
+                Discord bot that allows the management of servers as well as various utilities such as the use of music. 
                 <br />
                 <a href="https://github.com/Ikergonzalez4/discord-bot" target="_blank" rel="noopener noreferrer">
                     GITHUB REPO
@@ -94,7 +91,7 @@ const Projects = () => {
         title: "Your Home Tick",
         moreInfo: (
             <>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit vivamus leo, venenatis commodo facilisis nullam tempor quam neque suscipit inceptos curae, habitasse mauris pulvinar sed molestie facilisi non ac. Ad aenean in justo vel viverra cubilia. 
+                Static web page that offers the sale of some services for clients. 
                 <br />
                 <a href="https://www.yourhometick.com" target="_blank" rel="noopener noreferrer">
                     LIVE WEBPAGE
@@ -114,7 +111,7 @@ const Projects = () => {
       id: 4,
       title: "Back End Pokedex",
       moreInfo:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit vivamus leo, venenatis commodo facilisis nullam tempor quam neque suscipit inceptos curae, habitasse mauris pulvinar sed molestie facilisi non ac. Ad aenean in justo vel viverra cubilia.",
+        "Web page with the pokedex of pokemons through database access.",
         description: (
             <div className="shield-container">
               <img src={htmlS} alt="HTML Shield" className="shield-image" />
