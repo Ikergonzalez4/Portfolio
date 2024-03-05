@@ -6,6 +6,9 @@ import cssImage from '../../assets/images/css.svg';
 import jsImage from '../../assets/images/js.svg';
 import reactImage from '../../assets/images/react.svg';
 import vueImage from '../../assets/images/vue.svg';
+import nodeImage from '../../assets/images/nodejs.svg';
+import nextjsImage from '../../assets/images/next-js.svg';
+import mongodbImage from '../../assets/images/mongodb.svg';
 import javaImage from '../../assets/images/java.svg';
 import kotlinImage from '../../assets/images/kotlin.svg';
 import swiftImage from '../../assets/images/swift.svg';
@@ -56,6 +59,26 @@ function About() {
                     <p>Vue</p>
                 </div>
                 <div className="image-container">
+                    <img src={nodeImage} alt="Node" />
+                    <p>Node</p>
+                </div>
+                <div className="image-container">
+                    <img src={nextjsImage} alt="NextJS" />
+                    <p>NextJS</p>
+                </div>
+                <div className="image-container">
+                    <img src={mongodbImage} alt="MongoDB" />
+                    <p>MongoDB</p>
+                </div>
+                <div className="image-container">
+                    <img src={accessImage} alt="Microsoft Access" />
+                    <p>Access</p>
+                </div>
+                <div className="image-container">
+                    <img src={accessImage} alt="Microsoft Access" />
+                    <p>Access</p>
+                </div>
+                <div className="image-container">
                     <img src={javaImage} alt="Java" />
                     <p>Java</p>
                 </div>
@@ -90,26 +113,6 @@ function About() {
                 <div className="image-container">
                     <img src={gitImage} alt="Git" />
                     <p>Git</p>
-                </div>
-                <div className="image-container">
-                    <img src={accessImage} alt="Microsoft Access" />
-                    <p>Access</p>
-                </div>
-                <div className="image-container">
-                    <img src={accessImage} alt="Microsoft Access" />
-                    <p>Access</p>
-                </div>
-                <div className="image-container">
-                    <img src={accessImage} alt="Microsoft Access" />
-                    <p>Access</p>
-                </div>
-                <div className="image-container">
-                    <img src={accessImage} alt="Microsoft Access" />
-                    <p>Access</p>
-                </div>
-                <div className="image-container">
-                    <img src={accessImage} alt="Microsoft Access" />
-                    <p>Access</p>
                 </div>
                 <div className="image-container">
                     <img src={accessImage} alt="Microsoft Access" />
