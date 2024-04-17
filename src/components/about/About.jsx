@@ -19,6 +19,7 @@ import accessImage from '../../assets/images/access.svg';
 import firebaseImage from '../../assets/images/firebase.svg';
 import gitImage from '../../assets/images/git.svg';
 import photoshopImage from '../../assets/images/photoshop.svg';
+import wireframe from '../../assets/images/wireframe.png'
 import Scroll from '../scroll/Scroll.jsx';
 
 function About() {
@@ -71,12 +72,12 @@ function About() {
                     <p>MongoDB</p>
                 </div>
                 <div className="image-container">
-                    <img src={accessImage} alt="Microsoft Access" />
-                    <p>Access</p>
+                    <img src={wireframe} alt="X" />
+                    <p>X</p>
                 </div>
                 <div className="image-container">
-                    <img src={accessImage} alt="Microsoft Access" />
-                    <p>Access</p>
+                    <img src={wireframe} alt="X" />
+                    <p>X</p>
                 </div>
                 <div className="image-container">
                     <img src={javaImage} alt="Java" />
