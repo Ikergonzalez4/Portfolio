@@ -23,6 +23,7 @@
     margin-bottom: -410px;
 }
 
+
 .project-container:nth-child(even) .project-image {
     grid-column: 1;
     margin-top: 0;
