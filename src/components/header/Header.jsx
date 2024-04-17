@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import linkedinIcon from '../../assets/images/linkedin.svg';
 import githubIcon from '../../assets/images/github.svg';
 import discordIcon from '../../assets/images/discord.svg';
@@ -15,7 +16,7 @@ function Header() {
                 <h1 className="apple-style">Hi, my name is Iker</h1>       
                 {/* TODO: writing animation */}
                 <h3 className="apple-style-h3">and I'm a Software Developer</h3>
-                <a className="button" href="/src/components/ContactForm.jsx">Contact Me</a>
+                <Link className="button" to="/contact">Contact Me</Link>
                 <div className="icon-container">
                     <a href="https://www.linkedin.com/in/iker-gonzález-camacho-85077220b/">
                         <img className="icon" src={linkedinIcon} alt="LinkedIn" />
