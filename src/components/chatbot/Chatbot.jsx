@@ -7,6 +7,8 @@ const Chatbot = () => {
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState('');
     const [isFirstMessage, setIsFirstMessage] = useState(true);
+    const [isQuestionsOpen, setIsQuestionsOpen] = useState(false);
+
 
     const predefinedAnswers = {
         'hi': 'Hello!',
@@ -33,10 +35,16 @@ const Chatbot = () => {
         'what is your favorite emoji?': 'My favorite emoji is 😂',
         'what are your hobbies?': 'My hobbies are programming, playing videogames and listening to music',
     };
+    
+    const suggestedQuestions = [
+        'Tell me about your studies',
+        'What is your favourite IDE?',
+        // ... add more suggested questions here
+    ];
 
     const handleSend = async () => {
         let response;
-
+        
         const lowerCaseInput = input.toLowerCase();
 
 
@@ -71,7 +79,17 @@ const Chatbot = () => {
                                 <span>{message.text}</span>
                             </div>
                         ))}
+                    <div className={`suggested-questions ${isQuestionsOpen ? 'open' : ''}`}>
+                        <h2 onClick={() => setIsQuestionsOpen(!isQuestionsOpen)}>Suggested questions</h2>                        {isQuestionsOpen && (
+                            <ul>
+                                {suggestedQuestions.map((question, index) => (
+                                    <li key={index}>{question}</li>
+                                ))}
+                            </ul>
+                        )}
                     </div>
+                    </div>
+                    
                     <div className={`input-container ${isFirstMessage ? 'first' : ''}`}>
                         <input 
                             value={input} 

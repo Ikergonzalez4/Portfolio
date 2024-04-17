@@ -107,7 +107,6 @@
     top: 10px;
     right: 0px;
     /* Añade margen si es necesario */
-    margin: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.55);
 }
 
@@ -136,6 +135,42 @@ body.light-mode {
         color: #000000;
     }
     
+}
+
+.suggested-questions {
+    position: absolute;
+    text-align: left;
+    margin-left: 10px;
+    top: 5px;
+    width: 220px;
+    margin-left: 10px !important;
+}
+
+.suggested-questions h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.suggested-questions ul {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+}
+
+.suggested-questions.open ul {
+    display: block;
+    background-color: aliceblue;
+    width: 400px !important ;
+    border-radius: 2px;
+}
+
+.suggested-questions ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #007BFF;
+    text-decoration: underline;
 }
 
 
