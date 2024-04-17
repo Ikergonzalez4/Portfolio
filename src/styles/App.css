@@ -140,7 +140,7 @@ body.dark-mode {
     border-radius: 50%;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     .Avatar img {
       display: none;
     }
@@ -476,11 +476,23 @@ body.light-mode {
       margin-left: 150px; /* Añade un margen a la izquierda */
     }
 
+    @media (max-width: 600px) {
+      .App-header {
+        margin-left: 0;
+      }
+    }
+
     .Avatar img {
       width: 400px;
       height: 400px;
       object-fit: cover;
       border-radius: 50%;
+    }
+
+    @media (max-width: 600px) {
+      .Avatar img {
+        display: none;
+      }
     }
     
   
