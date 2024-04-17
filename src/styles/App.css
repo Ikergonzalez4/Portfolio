@@ -486,7 +486,6 @@ body.light-mode {
   
     /*ABOUT*/
     
-    
     .about-container {
       margin-top: 100px;
       height: 100svh;
@@ -562,39 +561,129 @@ body.light-mode {
     font-weight: bold;
   }
 
-    @media (max-width: 768px) {
-      .about-container {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
-        height: auto;
-      }
-  
-      .description {
-        width: 100%;
-        text-align: center;
-      }
-  
-      .skills {
-        margin-top: 50px;
-      }
-  
-      .description h1 {
-        font-size: 2em;
-        margin-left: 0;
-      }
-  
-      .description p {
-        font-size: 1em;
-        margin-left: 20px;
-        margin-right: 20px;
-      }
-  
-      .backend-title, .frontend-title, .extra-title {
-        margin-left: 0;
-        text-align: center;
-      }
+      
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      height: auto;
     }
+
+    .description {
+      width: 100%;
+      text-align: center;
+    }
+
+    .skills {
+      transform: scale(0.9);
+      grid-template-columns: repeat(4, 1fr); /* Cambia a 3 columnas */
+      height: 800px; /* Aumenta la altura */
+      width: 100%;
+      margin: auto;
+    }
+    
+    .techs {
+      position: absolute;
+      right: 65px;
+      margin-bottom: 200px;
+      text-align: center;
+    }
+
+    .skills img{
+      filter: none;
+    }
+
+    .description h1 {
+      font-size: 2em;
+      margin-left: 0;
+    }
+
+    .description p {
+      font-size: 1.1em;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  
+  /* Estilos responsive para pantallas de portátil */
+@media (min-width: 900px) and (max-width: 1440px) {
+
+  .project-container:nth-child(even) .project-text {
+    grid-column: 3;
+    margin-bottom: -300px;
+  }
+
+    .about-container {
+    margin-top: 100px;
+    height: 100svh;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .description {
+    width: 65%;
+    /* Ajusta según sea necesario */
+  }
+  
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px; /* Añadido para agregar un margen interno alrededor del contenido */
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: #222 0px 0px 10px 0px;
+    width: 40%;
+    height: 500px;
+    margin-top: 20vh; /* Añadido para mover el contenedor hacia abajo */
+    margin-right: 10vh;
+  }
+
+  .skills > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-container {
+    height: 100px; /* Ajusta este valor según tus necesidades */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .description h1 {
+    font-size: 3em;
+    margin-left: 80px; /* Añadido para agregar un margen a la izquierda */
+    text-align: left; /* Añadido para alinear el texto a la izquierda */
+    color: #DB82FE;
+  }
+
+  .techs {
+    position: absolute; /* Añadido para permitir la alineación a la derecha */
+    right: 12vh; /* Añadido para alinear el contenedor a la derecha */
+    margin-top: 25px;
+    text-align: right;
+    color: #DB82FE;
+  }
+  
+  .description h1 span {
+    display: block;
+  }
+  
+  .description p {
+    font-size: 1.4em !important;
+    text-align: left; 
+    margin-left: 80px;
+    margin-right: 70px;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 }
 
 .icon:hover {
@@ -729,3 +818,4 @@ body.light-mode {
   opacity: 0.5;
   transform: translateY(3px);
 }
+
