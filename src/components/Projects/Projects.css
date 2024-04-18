@@ -10,7 +10,7 @@
 .projects-container {
     display: flex; /* Cambiado de grid a flex */
     flex-direction: column; /* Añadido para alinear los proyectos verticalmente */
-    width: 65%; /* Ajustado para que el contenedor ocupe el 80% del ancho */
+    width: 75%; /* Ajustado para que el contenedor ocupe el 80% del ancho */
     margin: 0 auto; /* Centrado horizontalmente */
 }
 
